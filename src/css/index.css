@@ -1,0 +1,40 @@
+@charset "utf-8";
+a {
+	text-decoration: none;
+}
+.gnb .two_depth {
+	display: none;
+}
+.gnb li.on .two_depth,
+.gnb li.on,
+.gnb .on+.two_depth {
+	display: block;
+}
+.gnb > .one_depth > li {
+	float: left;
+	list-style: none;
+	padding: 20px 20px;
+	position: relative;
+}
+.gnb > .one_depth > li > a {
+	font-size: 20px;
+	font-weight: bolder;
+	background-color: yellow;
+	padding: 0px 5px;
+	box-shadow: 0px 5px 5px gray;
+}
+.gnb .two_depth {
+	list-style: none;
+	position: absolute;
+	top: 50px;
+	left: -20px;
+	width: 170px;
+}
+.gnb .two_depth > li  {
+	padding: 5px;
+	background-color: black;
+	border: 1px solid lime;
+}
+.gnb .two_depth > li > a {
+	color: white;
+}
